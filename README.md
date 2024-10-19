@@ -4,7 +4,7 @@ Starter of nitro server.
 Nitro: [https://nitro.unjs.io/](https://nitro.unjs.io/)
 
 # Why
-I got an error from running: 
+I got an error from running:
 ```shell
 pnpm dlx giget@latest nitro nitro-app --install
 ```
