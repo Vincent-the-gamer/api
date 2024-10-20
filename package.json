@@ -5,7 +5,7 @@
     "dev": "nitro dev --port 8080",
     "lint:fix": "eslint . --fix",
     "prepare": "nitro prepare",
-    "preview": "node .output/server/index.mjs"
+    "start": "NITRO_PORT=3001 node .output/server/index.mjs"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
