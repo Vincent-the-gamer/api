@@ -2,4 +2,5 @@
 export default defineNitroConfig({
   srcDir: 'server',
   noPublicDir: true,
+  logLevel: 2
 })
