@@ -1,4 +1,4 @@
-import getKaomoji from "~~/tools/kaomoji"
+import getKaomoji from '~~/tools/kaomoji'
 
 export default eventHandler(() => {
   return {
