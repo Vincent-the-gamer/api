@@ -1,4 +1,5 @@
 import useRange from "~~/hooks/range"
+import randomPick from "~~/tools/random"
 
 const picInfo = {
     murasame: {
@@ -9,11 +10,6 @@ const picInfo = {
 }
 
 const types: string[] = Object.keys(picInfo)
-
-function randomPick<T>(array: T[]): T {
-    const index = Math.floor(Math.random() * array.length)
-    return array[index]
-}
 
 export default eventHandler((event) => {
     const { baseUrl } = useRuntimeConfig(event)
