@@ -4,5 +4,4 @@ dist
 .nitro
 .cache
 .output
-.env
 .DS_Store
