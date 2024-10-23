@@ -4,8 +4,13 @@ import randomPick from "~~/tools/random"
 const picInfo = {
     murasame: {
         minIndex: 1,
-        maxIndex: 7,
+        maxIndex: 13,
         suffix: ".jpg"
+    },
+    mitsukasa_ayase: {
+        minIndex: 1,
+        maxIndex: 3,
+        suffix: ".png"
     }
 }
 
