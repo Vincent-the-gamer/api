@@ -11,6 +11,11 @@ const picInfo = {
         minIndex: 1,
         maxIndex: 3,
         suffix: ".png"
+    },
+    tomotake_yoshino: {
+        minIndex: 1,
+        maxIndex: 9,
+        suffix: ".jpg"
     }
 }
 

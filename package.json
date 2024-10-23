@@ -5,7 +5,7 @@
     "dev": "nitro dev --port 8080",
     "lint:fix": "eslint . --fix",
     "prepare": "nitro prepare",
-    "start": "node .output/server/index.mjs",
+    "start": "NITRO_PORT=3001 node .output/server/index.mjs",
     "dep": "taze major",
     "tsx": "tsx"
   },
