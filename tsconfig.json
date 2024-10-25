@@ -2,8 +2,8 @@
 {
   "extends": "./.nitro/types/tsconfig.json",
   "compilerOptions": {
-    "moduleResolution": "node",
     "module": "esnext",
+    "moduleResolution": "node"
   },
   "exclude": [
     "node_modules",
