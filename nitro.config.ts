@@ -6,4 +6,10 @@ export default defineNitroConfig({
     baseUrl: 'your_api_deploy_location',
   },
   compatibilityDate: '2024-11-16',
+  // Cross Origin
+  routeRules: {
+    "/**": {
+      cors: true
+    }
+  }
 })
