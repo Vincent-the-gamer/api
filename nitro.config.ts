@@ -8,8 +8,8 @@ export default defineNitroConfig({
   compatibilityDate: '2024-11-16',
   // Cross Origin
   routeRules: {
-    "/**": {
-      cors: true
-    }
-  }
+    '/**': {
+      cors: true,
+    },
+  },
 })
