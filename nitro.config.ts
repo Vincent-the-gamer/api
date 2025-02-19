@@ -2,6 +2,7 @@
 export default defineNitroConfig({
   srcDir: 'server',
   logLevel: 2,
+  errorHandler: "~/error",
   runtimeConfig: {
     baseUrl: 'your_api_deploy_location',
   },
