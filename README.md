@@ -2,7 +2,17 @@
 
 Self-hosted API.
 
-## Dev environment variables
+## Documentation
+| URL | Description |
+| - | - |
+| / | Get a random kaomoji |
+| /randYuzu | Get a random YuzuSoft character picture. |
+| /whoami | Get you local IP of the machine you are using. |
+| /wenyan | Compile Wenyan-lang code |
+
+## Dev
+
+### Dev environment variables
 
 With prefix: `NITRO_`
 
@@ -10,7 +20,7 @@ With prefix: `NITRO_`
 NITRO_BASE_URL=xxx
 ```
 
-## Log
+### Log
 
 This repo is using `tslog` as logger.
 
@@ -25,7 +35,6 @@ This repo is using `tslog` as logger.
     at async Server.toNodeHandle (file:///Users/guifeng/VSCodeWorkSpace/api/node_modules/.pnpm/h3@1.13.0/node_modules/h3/dist/index.mjs:2270:7)
 
 ```
-
 
 ## Production
 
@@ -47,6 +56,6 @@ export default defineNitroConfig({
 
 `baseUrl` replaces `NITRO_BASE_URL` in production build(runtime).
 
-# License
+## License
 
 [MIT License 2024-present @ Vincent-the-gamer](./LICENSE)
