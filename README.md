@@ -7,7 +7,7 @@ Self-hosted API.
 | - | - |
 | / | Get a random kaomoji |
 | /randYuzu | Get a random YuzuSoft character picture. |
-| /whoami | Get you local IP of the machine you are using. |
+| /whoami | Get your local IP of the machine you are using. |
 | /wenyan | Compile Wenyan-lang code |
 
 ## Dev
