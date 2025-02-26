@@ -8,7 +8,16 @@ Self-hosted API.
 | / | Get a random kaomoji |
 | /randYuzu | Get a random YuzuSoft character picture. |
 | /whoami | Get your local IP of the machine you are using. |
-| /wenyan | Compile Wenyan-lang code (Node.js required!!!) |
+| /codeRunner | Run your code. |
+
+### Code Runner
+
+Supported languages:
+
+| Language | Variable |
+|  -     |   - |
+| JavaScript | js |
+| Wenyan-lang| wy |
 
 ## Dev
 
@@ -55,6 +64,16 @@ export default defineNitroConfig({
 ```
 
 `baseUrl` replaces `NITRO_BASE_URL` in production build(runtime).
+
+## Deploy
+
+Get your Node.js environment ready, and
+
+```shell
+NITRO_PORT=xxxx node .output/server/index.mjs
+```
+
+You can move your `.output` folder to anywhere or use any port.
 
 ## License
 

@@ -7,7 +7,8 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 export enum Language {
-  JavaScript,
+  JavaScript = 'js',
+  Wenyan = 'wy',
 }
 
 export function run(lang: Language, code: string): Promise<string> {
