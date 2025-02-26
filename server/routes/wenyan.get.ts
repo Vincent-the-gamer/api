@@ -1,18 +1,11 @@
 import Wenyan from '@wenyan/core'
-import axios from 'axios'
+import { Language, run } from '~~/tools/codeRunner'
 
 export default eventHandler(async (event) => {
   const { code }: any = getQuery(event)
   const compiledToJs: string = Wenyan.compile(code)
-  const { data }: any = await axios.post('https://glot.io/run/javascript?version=latest', {
-    files: [{
-      name: 'main.js',
-      content: compiledToJs,
-    }],
-    command: '',
-    stdin: '',
-  })
+  const result = await run(Language.JavaScript, compiledToJs)
   return {
-    result: data.stdout,
+    result,
   }
 })
