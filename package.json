@@ -17,12 +17,19 @@
     "@antfu/eslint-config": "^4.3.0",
     "eslint": "^9.21.0",
     "nitropack": "latest",
+    "simple-git-hooks": "^2.11.1",
     "taze": "^18.6.0",
     "tsx": "^4.19.3"
   },
   "pnpm": {
     "ignoredBuiltDependencies": [
       "esbuild"
+    ],
+    "onlyBuiltDependencies": [
+      "simple-git-hooks"
     ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm run lint:fix"
   }
 }
