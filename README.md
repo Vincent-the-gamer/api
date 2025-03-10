@@ -14,10 +14,12 @@ Self-hosted API.
 
 Supported languages:
 
-| Language | Variable |
-|  -     |   - |
-| JavaScript | js |
-| Wenyan-lang| wy |
+| Language | Variable | Note |
+|  -     |   - | - |
+| JavaScript | js |  |
+| Wenyan-lang| wy | |
+| Python 2 | py | Only work if `python` command is available. |
+| Python 3 | py3 | Only work if `python3` command is available. |
 
 ## Dev
 
@@ -73,7 +75,7 @@ Get your Node.js environment ready, and
 NITRO_PORT=xxxx node .output/server/index.mjs
 ```
 
-You can move your `.output` folder to anywhere or use any port.
+You can move your `.output` folder to anywhere and use any port.
 
 ## License
 

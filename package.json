@@ -14,15 +14,12 @@
     "tslog": "^4.9.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.4.0",
-    "eslint": "^9.21.0",
+    "@antfu/eslint-config": "^4.8.1",
+    "eslint": "^9.22.0",
     "nitropack": "latest",
     "simple-git-hooks": "^2.11.1",
-    "taze": "^18.6.0",
+    "taze": "^18.7.1",
     "tsx": "^4.19.3"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm run lint:fix"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -31,5 +28,8 @@
     "ignoredBuiltDependencies": [
       "@parcel/watcher"
     ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm run lint:fix"
   }
 }

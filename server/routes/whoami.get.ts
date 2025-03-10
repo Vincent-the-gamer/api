@@ -7,7 +7,7 @@ export default eventHandler(() => {
   // get network interfaces info.
   const networkInterfaces = os.networkInterfaces()
 
-  // get first non-loopback IPV4 address.
+  // get the first non-loopback IPV4 address.
   let localIP = ''
   for (const interfaceName in networkInterfaces) {
     for (const network of networkInterfaces[interfaceName]) {

@@ -1,4 +1,3 @@
-import Wenyan from '@wenyan/core'
 import { Language, run } from '~~/tools/codeRunner'
 
 export default eventHandler(async (event) => {
@@ -10,8 +9,13 @@ export default eventHandler(async (event) => {
       stdout = await run(Language.JavaScript, code)
       break
     case Language.Wenyan:
-      const compiledToJs: string = Wenyan.compile(code)
-      stdout = await run(Language.JavaScript, compiledToJs)
+      stdout = await run(Language.Wenyan, code)
+      break
+    case Language.Python:
+      stdout = await run(Language.Python, code)
+      break
+    case Language.Python3:
+      stdout = await run(Language.Python3, code)
       break
     default:
       stdout = 'No language matched!'
