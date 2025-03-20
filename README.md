@@ -3,12 +3,28 @@
 Self-hosted API.
 
 ## Documentation
-| URL | Description |
-| - | - |
-| / | Get a random kaomoji |
-| /randYuzu | Get a random YuzuSoft character picture. |
-| /whoami | Get your local IP of the machine you are using. |
-| /codeRunner | Run your code. |
+| URL | Method | Description |
+| - | - | - |
+| / | GET | Get a random kaomoji |
+| /meizi | GET | Get a random anime girl picture. |
+| /whoami| GET  | Get your local IP of the machine you are using. |
+| /codeRunner| GET  | Run your code. |
+
+### Meizi("Girl" in Chinese)
+Parameters:
+
+```
+key: "type"
+options: [
+    "common",
+    "ayachi_nene",
+    "mitsukasa_ayase",
+    "murasame",
+    "tomotake_yoshino"
+]
+```
+
+if your "type" key is not in the options, or leave it empty, you'll get a random type and random picture.
 
 ### Code Runner
 
