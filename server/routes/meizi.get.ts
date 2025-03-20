@@ -1,5 +1,6 @@
+import path from "node:path"
 import { randomPick } from "~~/tools/array"
-import { getFileNamesByDirectory } from "~~/tools/files"
+import { getPublicDir, readFileNames } from "~~/tools/files"
 
 const types = [
     "common",
@@ -20,7 +21,12 @@ export default eventHandler((event) => {
     }
 
     const { baseUrl } = useRuntimeConfig(event)
-    const files = getFileNamesByDirectory(`./server/public/pictures/${_type}`)
+
+    const publicDir = getPublicDir(event)
+  
+    const files = readFileNames(
+        path.join(publicDir, `./pictures/${_type}`)
+    )
     const meizi = randomPick(files)
 
     return {
