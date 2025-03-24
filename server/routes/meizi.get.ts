@@ -1,6 +1,6 @@
 import path from "node:path"
 import { randomPick } from "~~/tools/array"
-import { getPublicDir, readFileNames, __dirname } from "~~/tools/files"
+import { getPublicDir, readFileNames } from "~~/tools/files"
 
 const types = [
     "common",
@@ -31,7 +31,6 @@ export default eventHandler((event) => {
 
     return {
         code: 200,
-        url: `${baseUrl}/pictures/${_type}/${meizi}`,
-        dirname: __dirname
+        url: `${baseUrl}/pictures/${_type}/${meizi}`
     }
 })

@@ -11,6 +11,13 @@ Self-hosted API.
 | /codeRunner| GET  | Run your code. |
 
 ### Meizi("Girl" in Chinese)
+
+> [!IMPORTANT]
+> The `__dirname` differ between dev mode and production mode.
+> dev: `<project_dir>/.nitro/dev`
+> prod: `<project_dir>/.output/server`
+> vercel: `/var/task`
+
 Parameters:
 
 ```

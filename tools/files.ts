@@ -14,10 +14,18 @@ export function readFileNames(dir: string): string[] {
 export function getPublicDir(event: any): string {
     const { env } = useRuntimeConfig(event)
     let _path: string
-    if(env == "dev") {
-        _path = path.resolve(__dirname, "../../server/public")
-    } else {
-        _path = path.resolve(__dirname, "../public")
+    switch(env) {
+        case "dev":
+            _path = path.resolve(__dirname, "../../server/public")
+            break
+        case "prod":
+            _path = path.resolve(__dirname, "../public")
+            break
+        case "vercel":
+            _path = _path = path.resolve(__dirname, "./public")
+            break
+        default:
+            break
     }
     return _path
 }

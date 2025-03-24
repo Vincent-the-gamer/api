@@ -4,7 +4,9 @@ export default defineNitroConfig({
   logLevel: 2,
   errorHandler: '~/error',
   runtimeConfig: {
-    env: "prod",
+    // "prod" on direct production build.
+    // "vercel" on vercel build.
+    env: "vercel", 
     baseUrl: 'your_api_deploy_location',
   },
   compatibilityDate: '2024-11-16',
