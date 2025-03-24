@@ -20,3 +20,6 @@ hero:
 #     icon:
 #       src: "/imgs/card.jpg"
 ---
+
+> [!IMPORTANT]
+> Due to the location of Vercel servers, proxy is required in some places.

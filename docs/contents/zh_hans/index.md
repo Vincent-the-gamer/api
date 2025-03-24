@@ -20,3 +20,6 @@ hero:
 #     icon:
 #       src: "/imgs/card.jpg"
 ---
+
+> [!IMPORTANT] 重要
+> 由于Vercel服务器所在位置的原因，某些地区可能需要魔法

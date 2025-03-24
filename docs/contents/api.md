@@ -25,7 +25,7 @@ Return type: `JSON`
 
 - url: `https://vince-api.vercel.app/meizi`
 - method: `GET`
-- Parameters:
+- parameters:
 
 ```
 - Name："type"
