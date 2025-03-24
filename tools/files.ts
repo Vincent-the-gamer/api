@@ -2,7 +2,7 @@ import { readdirSync } from "node:fs"
 import path, { dirname } from "node:path"
 import { fileURLToPath } from "node:url"
 
-let __dirname = dirname(
+export let __dirname = dirname(
     fileURLToPath(import.meta.url)
 )
 
