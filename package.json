@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "assets": "tsx prepare/generateMeizi.ts",
+    "assets": "tsx prepare/generateAssets.ts",
     "build": "pnpm run assets && nitro build",
     "dev": "nitro dev --port 8080",
     "lint:fix": "eslint . --fix",
