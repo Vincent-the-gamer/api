@@ -1,33 +1,19 @@
-import path from "node:path"
 import { randomPick } from "~~/tools/array"
-import { getPublicDir, readFileNames } from "~~/tools/files"
+import { meiziTypes } from "~~/tools/assets"
 
-const types = [
-    "common",
-    "ayachi_nene",
-    "mitsukasa_ayase",
-    "murasame",
-    "tomotake_yoshino"
-]
-
-export default eventHandler((event) => {
+export default eventHandler(async (event) => {
     const { type }: any = getQuery(event)
     let _type: string
     
-    if(type && types.includes(type)) {
+    if(type && meiziTypes.includes(type)) {
         _type = type
     } else {
-        _type = randomPick(types)
+        _type = randomPick(meiziTypes)
     }
 
     const { baseUrl } = useRuntimeConfig(event)
-
-    const publicDir = getPublicDir(event)
-  
-    const files = readFileNames(
-        path.join(publicDir, `./pictures/${_type}`)
-    )
-    const meizi = randomPick(files)
+    const meiziMap = await useStorage("assets:server").getItem("meizi.json")
+    const meizi = randomPick(meiziMap[_type])
 
     return {
         code: 200,

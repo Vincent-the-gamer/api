@@ -1,5 +1,5 @@
 import { exec } from 'node:child_process'
-import fs from 'node:fs'
+import fs from 'fs-extra'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import Wenyan from '@wenyan/core'

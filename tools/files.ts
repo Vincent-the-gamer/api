@@ -1,31 +1,12 @@
-import { readdirSync } from "node:fs"
-import path, { dirname } from "node:path"
-import { fileURLToPath } from "node:url"
-
-export let __dirname = dirname(
-    fileURLToPath(import.meta.url)
-)
+import { readdirSync, writeFileSync } from "fs"
+import { ensureFile } from "fs-extra"
 
 export function readFileNames(dir: string): string[] {
     let files = readdirSync(dir)
     return files.filter(name => name !== ".DS_Store")
 }
 
-export function getPublicDir(event: any): string {
-    const { env } = useRuntimeConfig(event)
-    let _path: string
-    switch(env) {
-        case "dev":
-            _path = path.resolve(__dirname, "../../server/public")
-            break
-        case "prod":
-            _path = path.resolve(__dirname, "../public")
-            break
-        case "vercel":
-            _path = path.resolve(__dirname, "./static")
-            break
-        default:
-            break
-    }
-    return _path
+export async function writeFile(file: string, data: any) {
+    await ensureFile(file)
+    writeFileSync(file, data)
 }
