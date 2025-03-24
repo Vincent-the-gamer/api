@@ -7,8 +7,10 @@
     "lint:fix": "eslint . --fix",
     "prepare": "nitro prepare",
     "start": "NITRO_PORT=3001 node .output/server/index.mjs",
-    "dep": "taze major",
-    "tsx": "tsx"
+    "dep": "taze major -r",
+    "tsx": "tsx",
+    "docs": "pnpm -C docs run serve",
+    "docs:build": "pnpm -C docs run build"
   },
   "dependencies": {
     "@wenyan/core": "^0.3.4",
@@ -16,23 +18,18 @@
     "tslog": "^4.9.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.10.1",
-    "eslint": "^9.22.0",
+    "@antfu/eslint-config": "^4.11.0",
+    "eslint": "^9.23.0",
     "nitropack": "latest",
-    "simple-git-hooks": "^2.11.1",
     "taze": "^19.0.2",
     "tsx": "^4.19.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "esbuild",
-      "simple-git-hooks"
+      "esbuild"
     ],
     "ignoredBuiltDependencies": [
       "@parcel/watcher"
     ]
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm run lint:fix"
   }
 }

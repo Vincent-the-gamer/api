@@ -3,7 +3,7 @@ import { meiziTypes } from '~~/tools/assets'
 
 export default eventHandler(async (event) => {
   const { baseUrl, env } = useRuntimeConfig(event)
-  const vercelBase = "https://vince-api.vercel.app"
+  const vercelBase = 'https://vince-api.vercel.app'
 
   const { type }: any = getQuery(event)
   let _type: string
@@ -20,8 +20,8 @@ export default eventHandler(async (event) => {
 
   let base = baseUrl
 
-  if(env === "vercel") {
-     base = vercelBase
+  if (env === 'vercel') {
+    base = vercelBase
   }
 
   return {

@@ -8,7 +8,7 @@ Self-hosted API.
 | / | GET | Get a random kaomoji |
 | /meizi | GET | Get a random anime girl picture. |
 | /whoami| GET  | Get your local IP of the machine you are using. |
-| /codeRunner| GET  | Run your code. |
+| /codeRunner| GET  | Run your code. (Not working on Vercel for now.)|
 
 ### Meizi("Girl" in Chinese)
 

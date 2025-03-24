@@ -4,5 +4,6 @@ export default antfu({
   typescript: true,
   ignores: [
     'node_modules',
+    'docs',
   ],
 })
