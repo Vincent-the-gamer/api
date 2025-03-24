@@ -22,7 +22,7 @@ export function getPublicDir(event: any): string {
             _path = path.resolve(__dirname, "../public")
             break
         case "vercel":
-            _path = _path = path.resolve(__dirname, "./chunks/public")
+            _path = path.resolve(__dirname, "../static")
             break
         default:
             break
