@@ -35,7 +35,7 @@ lastUpdated: true
     "mitsukasa_ayase" - 三司绫濑
     "murasame" - 丛雨
     "tomotake_yoshino" - 朝武芳乃
-
+    "sakimichan" - 画师Sakimichan的作品
 ```
 
 返回值类型：`JSON`
@@ -47,16 +47,22 @@ lastUpdated: true
 }
 ```
 
-## 获取当前设备在局域网内的IP
+## 在线运行代码
 
-- url: `https://vince-api.vercel.app/whoami`
+- url: `https://vince-api.vercel.app/codeRunner`
 - method: GET
-- 参数: 无
+- 参数: 
+  | 名称 | 值 |
+  | - | - |
+  | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c` |
+  | code | <你的代码> |
 
 返回值类型：`JSON`
 
 ```json
+// lang=python&code=print("hello")
 {
-  "ip": "169.254.100.6"
+    "stdout": "hello\n",
+    "stderr": ""
 }
 ```

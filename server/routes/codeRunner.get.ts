@@ -1,28 +1,22 @@
-import { Language, run } from '~~/tools/codeRunner'
+import { localRunner } from '~~/tools/localCodeRunner'
+import { remoteRunner } from '~~/tools/remoteCodeRunner'
 
 export default eventHandler(async (event) => {
+  const { env } = useRuntimeConfig(event)
   const { lang, code }: any = getQuery(event)
   let stdout: string
+  let stderr: string
 
-  switch (lang) {
-    case Language.JavaScript:
-      stdout = await run(Language.JavaScript, code)
-      break
-    case Language.Wenyan:
-      stdout = await run(Language.Wenyan, code)
-      break
-    case Language.Python:
-      stdout = await run(Language.Python, code)
-      break
-    case Language.Python3:
-      stdout = await run(Language.Python3, code)
-      break
-    default:
-      stdout = 'No language matched!'
-      break
+  if(env !== "vercel") {
+    stdout = await localRunner(lang, code)
+  } else {
+    const { stdout: out, stderr: err } = await remoteRunner(lang, code)
+    stdout = out
+    stderr = err
   }
-
+  
   return {
     stdout,
+    stderr
   }
 })

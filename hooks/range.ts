@@ -1,8 +1,8 @@
 /**
- * 模拟Python range()
- * @param start 开始索引
- * @param end 结束索引(不包含)
- * @param step 步长
+ * Copy of Python range()
+ * @param start Start index
+ * @param end End index(not included)
+ * @param step step
  * @returns
  */
 export default function useRange(start: number, end: number, step: number = 1): number[] {

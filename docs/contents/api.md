@@ -35,7 +35,7 @@ Return type: `JSON`
     "mitsukasa_ayase" - 三司あやせ
     "murasame" - ムラサメ
     "tomotake_yoshino" - 朝武芳乃
-
+    "sakimichan" - Drawings of Sakimichan
 ```
 
 Return type: `JSON`
@@ -47,16 +47,22 @@ Return type: `JSON`
 }
 ```
 
-## Get local IP from LAN
+## Online code runner
 
-- url: `https://vince-api.vercel.app/whoami`
+- url: `https://vince-api.vercel.app/codeRunner`
 - method: GET
-- Parameters: `nothing`
+- parameters: 
+  | key | value |
+  | - | - |
+  | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c` |
+  | code | <your_code> |
 
 Return type: `JSON`
 
 ```json
+// lang=python&code=print("hello")
 {
-  "ip": "169.254.100.6"
+    "stdout": "hello\n",
+    "stderr": ""
 }
 ```
