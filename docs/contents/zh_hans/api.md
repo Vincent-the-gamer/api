@@ -51,7 +51,7 @@ lastUpdated: true
 
 - url: `https://vince-api.vercel.app/codeRunner`
 - method: GET
-- 参数: 
+- 参数:
   | 名称 | 值 |
   | - | - |
   | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c` |
@@ -62,7 +62,7 @@ lastUpdated: true
 ```json
 // lang=python&code=print("hello")
 {
-    "stdout": "hello\n",
-    "stderr": ""
+  "stdout": "hello\n",
+  "stderr": ""
 }
 ```

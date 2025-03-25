@@ -25,7 +25,7 @@ export const zhHansConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
     },
     footer: {
       message: `文档由 Vincent-the-gamer 提供 | 使用 MIT 许可证开源`,
-      copyright: '版权所有 © 2024-现在 Vincent-the-gamer',
+      copyright: '版权所有 © 2025-现在 Vincent-the-gamer',
     },
     lightModeSwitchTitle: '切换至明亮模式',
     darkModeSwitchTitle: '切换至暗黑模式',

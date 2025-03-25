@@ -1,5 +1,5 @@
+import { meiziTypes } from '~~/composables/assets'
 import { randomPick } from '~~/tools/array'
-import { meiziTypes } from '~~/tools/assets'
 
 export default eventHandler(async (event) => {
   const { baseUrl, env } = useRuntimeConfig(event)

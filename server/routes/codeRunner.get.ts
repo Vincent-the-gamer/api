@@ -7,16 +7,17 @@ export default eventHandler(async (event) => {
   let stdout: string
   let stderr: string
 
-  if(env !== "vercel") {
+  if (env !== 'vercel') {
     stdout = await localRunner(lang, code)
-  } else {
+  }
+  else {
     const { stdout: out, stderr: err } = await remoteRunner(lang, code)
     stdout = out
     stderr = err
   }
-  
+
   return {
     stdout,
-    stderr
+    stderr,
   }
 })

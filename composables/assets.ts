@@ -4,5 +4,5 @@ export const meiziTypes = [
   'mitsukasa_ayase',
   'murasame',
   'tomotake_yoshino',
-  'sakimichan'
+  'sakimichan',
 ]

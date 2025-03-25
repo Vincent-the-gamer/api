@@ -51,7 +51,7 @@ Return type: `JSON`
 
 - url: `https://vince-api.vercel.app/codeRunner`
 - method: GET
-- parameters: 
+- parameters:
   | key | value |
   | - | - |
   | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c` |
@@ -62,7 +62,7 @@ Return type: `JSON`
 ```json
 // lang=python&code=print("hello")
 {
-    "stdout": "hello\n",
-    "stderr": ""
+  "stdout": "hello\n",
+  "stderr": ""
 }
 ```

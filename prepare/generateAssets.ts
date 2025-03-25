@@ -1,13 +1,10 @@
 /**
  * Run before build, generate meizi api data.
  */
-
 import path from 'node:path'
-import { useDirname } from '~~/hooks/dirname'
-import { meiziTypes } from '~~/tools/assets'
+import { __dirname } from '~~/composables'
+import { meiziTypes } from '~~/composables/assets'
 import { readFileNames, writeFile } from '~~/tools/files'
-
-const __dirname = useDirname()
 
 // generate meizi api data
 function generateMeizi() {
