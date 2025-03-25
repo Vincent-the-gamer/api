@@ -6,23 +6,6 @@ Self-hosted API.
 
 https://api.vince-g.xyz/
 
-### Meizi("Girl" in Chinese)
-
-Parameters:
-
-```
-key: "type"
-options: [
-    "common",
-    "ayachi_nene",
-    "mitsukasa_ayase",
-    "murasame",
-    "tomotake_yoshino"
-]
-```
-
-if your "type" key is not in the options, or leave it empty, you'll get a random type and random picture.
-
 ### Code Runner
 
 #### Local Run
