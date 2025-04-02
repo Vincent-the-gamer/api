@@ -8,8 +8,8 @@ lastUpdated: true
 
 ## 获取随机颜文字
 
-- url: `https://vince-api.vercel.app/`
-- method: `GET`
+- URL: `https://vince-api.vercel.app/`
+- Method: `GET`
 - 参数: `无`
 
 返回值：JSON
@@ -23,8 +23,8 @@ lastUpdated: true
 
 ## 获取随机妹子图片
 
-- url: `https://vince-api.vercel.app/meizi`
-- method: GET
+- URL: `https://vince-api.vercel.app/meizi`
+- Method: `GET`
 - 参数:
 
 ```
@@ -43,14 +43,14 @@ lastUpdated: true
 ```json
 {
   "code": 200,
-  "url": "https://vince-api.vercel.app/pictures/common/IMG_0735.jpg"
+  "URL": "https://vince-api.vercel.app/pictures/common/IMG_0735.jpg"
 }
 ```
 
 ## 在线运行代码
 
-- url: `https://vince-api.vercel.app/codeRunner`
-- method: GET
+- URL: `https://vince-api.vercel.app/codeRunner`
+- Method: `GET`
 - 参数:
   | 名称 | 值 |
   | - | - |
@@ -64,5 +64,30 @@ lastUpdated: true
 {
   "stdout": "hello\n",
   "stderr": ""
+}
+```
+
+
+## YouTube直链解析
+
+> [!IMPORTANT]
+> 由[fast-dirpy](https://github.com/Vincent-the-gamer/fast-dirpy)赋能。
+
+- URL: `https://vince-api.vercel.app/directLink`
+- Method: `POST`
+- 请求体:
+
+```json
+{
+    "rawLink": "https://www.youtube.com/watch?v=SAXpBgkXt60"
+}
+```
+
+返回类型: `JSON`
+
+```json
+{
+    "code": 200,
+    "directLink": "<direct_link>"
 }
 ```

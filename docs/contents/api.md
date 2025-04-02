@@ -8,9 +8,9 @@ lastUpdated: true
 
 ## Get random Kaomoji
 
-- url: `https://vince-api.vercel.app/`
-- method: GET
-- parameters: `nothing`
+- URL: `https://vince-api.vercel.app/`
+- Method: `GET`
+- Parameters: `nothing`
 
 Return type: `JSON`
 
@@ -23,9 +23,9 @@ Return type: `JSON`
 
 ## Get random anime girl picture
 
-- url: `https://vince-api.vercel.app/meizi`
-- method: `GET`
-- parameters:
+- URL: `https://vince-api.vercel.app/meizi`
+- Method: `GET`
+- Parameters:
 
 ```
 - Name："type"
@@ -43,15 +43,15 @@ Return type: `JSON`
 ```json
 {
   "code": 200,
-  "url": "https://vince-api.vercel.app/pictures/common/IMG_0735.jpg"
+  "URL": "https://vince-api.vercel.app/pictures/common/IMG_0735.jpg"
 }
 ```
 
 ## Online code runner
 
-- url: `https://vince-api.vercel.app/codeRunner`
-- method: GET
-- parameters:
+- URL: `https://vince-api.vercel.app/codeRunner`
+- Method: `GET`
+- Parameters:
   | key | value |
   | - | - |
   | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c` |
@@ -64,5 +64,29 @@ Return type: `JSON`
 {
   "stdout": "hello\n",
   "stderr": ""
+}
+```
+
+## YouTube direct link parser
+
+> [!IMPORTANT]
+> Powered by [fast-dirpy](https://github.com/Vincent-the-gamer/fast-dirpy).
+
+- URL: `https://vince-api.vercel.app/directLink`
+- Method: `POST`
+- Request Body:
+
+```json
+{
+    "rawLink": "https://www.youtube.com/watch?v=SAXpBgkXt60"
+}
+```
+
+Return type: `JSON`
+
+```json
+{
+    "code": 200,
+    "directLink": "<direct_link>"
 }
 ```
