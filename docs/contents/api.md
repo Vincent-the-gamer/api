@@ -90,3 +90,23 @@ Return type: `JSON`
     "directLink": "<direct_link>"
 }
 ```
+
+## HTTP Cat
+
+Input HTTP status code, then get a cat picture.
+
+- URL: `https://vince-api.vercel.app/httpcat/[status_code]`
+- Method: `GET`
+
+Return type: `JSON`
+
+Example: **https://vince-api.vercel.app/httpcat/404**
+
+```json
+{
+    "code": 200,
+    "img": "https://vince-api.vercel.app/httpcat/404.jpg"
+}
+```
+
+![404](/imgs/404.jpeg)

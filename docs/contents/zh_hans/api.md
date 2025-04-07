@@ -91,3 +91,24 @@ lastUpdated: true
     "directLink": "<direct_link>"
 }
 ```
+
+## HTTP猫图
+
+输入http状态码，获取对应的猫图。
+
+- URL: `https://vince-api.vercel.app/httpcat/[status_code]`
+- Method: `GET`
+
+返回类型: `JSON`
+
+示例：**https://vince-api.vercel.app/httpcat/404**
+
+```json
+{
+    "code": 200,
+    "img": "https://vince-api.vercel.app/httpcat/404.jpg"
+}
+```
+
+![404](/imgs/404.jpeg)
+

@@ -1,9 +1,9 @@
 import { meiziTypes } from '~~/composables/assets'
+import { useBaseUrl } from '~~/hooks/base'
 import { randomPick } from '~~/tools/array'
 
 export default eventHandler(async (event) => {
-  const { baseUrl, env } = useRuntimeConfig(event)
-  const vercelBase = 'https://vince-api.vercel.app'
+  const baseUrl = useBaseUrl(event)
 
   const { type }: any = getQuery(event)
   let _type: string
@@ -18,14 +18,8 @@ export default eventHandler(async (event) => {
   const meiziMap = await useStorage('assets:server').getItem('meizi.json')
   const meizi = randomPick(meiziMap[_type])
 
-  let base = baseUrl
-
-  if (env === 'vercel') {
-    base = vercelBase
-  }
-
   return {
     code: 200,
-    url: `${base}/pictures/${_type}/${meizi}`,
+    url: `${baseUrl}/pictures/${_type}/${meizi}`,
   }
 })
