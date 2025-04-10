@@ -4,6 +4,7 @@ export default [
     collapsed: false,
     items: [
       { text: 'APIs', link: '/api' },
+      { text: 'Webfonts', link: '/webfonts' },
     ],
   },
 ]

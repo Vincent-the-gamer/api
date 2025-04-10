@@ -4,6 +4,7 @@ export default [
     collapsed: false,
     items: [
       { text: 'API', link: '/zh_hans/api' },
+      { text: 'Webfonts 在线字体', link: '/zh_hans/webfonts' },
     ],
   },
 ]

@@ -13,6 +13,9 @@ hero:
     - theme: brand
       text: Get Started
       link: /api
+    - theme: alt
+      text: Webfonts
+      link: /webfonts
 
 # features:
 #   - title: Card

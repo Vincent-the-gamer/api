@@ -13,6 +13,9 @@ hero:
     - theme: brand
       text: 开始使用
       link: /zh_hans/api
+    - theme: alt
+      text: 在线字体(Webfonts)
+      link: /zh_hans/webfonts
 
 # features:
 #   - title: 卡片
