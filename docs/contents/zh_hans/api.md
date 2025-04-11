@@ -127,5 +127,3 @@ lastUpdated: true
 }
 ```
 
-![404](/imgs/404.jpeg)
-
