@@ -112,3 +112,20 @@ lastUpdated: true
 
 ![404](/imgs/404.jpeg)
 
+## 重开你的人生
+
+- URL: `https://vince-api.vercel.app/remake`
+- Method: `GET`
+- 参数: 无
+
+返回类型: `JSON`
+
+```json
+{
+    "code": 200,
+    "message": "重开成功！你出生在芬兰的市区, 是小南梁！"
+}
+```
+
+![404](/imgs/404.jpeg)
+

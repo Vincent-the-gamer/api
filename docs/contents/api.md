@@ -110,3 +110,21 @@ Example: **https://vince-api.vercel.app/httpcat/404**
 ```
 
 ![404](/imgs/404.jpeg)
+
+## 「Remake」 your life
+
+> [!CAUTION] Notice
+> This is a meme api, it's return message is in Chinese.
+
+- URL: `https://vince-api.vercel.app/remake`
+- Method: `GET`
+- Parameters: None
+
+Return Type: `JSON`
+
+```json
+{
+    "code": 200,
+    "message": "重开成功！你出生在芬兰的市区, 是小南梁！"
+}
+```
