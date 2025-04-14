@@ -67,7 +67,7 @@ Return type: `JSON`
 }
 ```
 
-## YouTube direct link parser
+## YouTube/Bilibili direct link parser
 
 > [!IMPORTANT]
 > Powered by [fast-dirpy](https://github.com/Vincent-the-gamer/fast-dirpy).
