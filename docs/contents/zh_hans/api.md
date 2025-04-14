@@ -68,7 +68,7 @@ lastUpdated: true
 ```
 
 
-## YouTube直链解析
+## YouTube/Bilibili直链解析
 
 > [!IMPORTANT]
 > 由[fast-dirpy](https://github.com/Vincent-the-gamer/fast-dirpy)赋能。
@@ -79,7 +79,8 @@ lastUpdated: true
 
 ```json
 {
-    "rawLink": "https://www.youtube.com/watch?v=SAXpBgkXt60"
+    "rawLink": "https://www.youtube.com/watch?v=SAXpBgkXt60",
+    "source": "youtube" // B站连接使用："bilibili"
 }
 ```
 

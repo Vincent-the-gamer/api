@@ -78,7 +78,8 @@ Return type: `JSON`
 
 ```json
 {
-    "rawLink": "https://www.youtube.com/watch?v=SAXpBgkXt60"
+    "rawLink": "https://www.youtube.com/watch?v=SAXpBgkXt60",
+    "source": "youtube" // "bilibili" for Bilibili.com
 }
 ```
 
