@@ -54,7 +54,7 @@ lastUpdated: true
 - 参数:
   | 名称 | 值 |
   | - | - |
-  | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c` |
+  | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c`, `rust` |
   | code | <你的代码> |
 
 返回值类型：`JSON`

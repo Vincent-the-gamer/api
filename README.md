@@ -8,6 +8,11 @@ https://api.vince-g.xyz/
 
 ### Code Runner
 
+By default, it uses `local runner` in **dev** and **prod** environment but `remote runner` in Vercel.
+
+> [!TIP]
+> You can manually choose remote runner in **dev** and **prod** environment by giving { "type"="remote" } in `codeRunner` API.
+
 #### Local Run
 
 Supported languages:
@@ -19,7 +24,7 @@ Supported languages:
 | Python 2 | py | Only work if `python` command is available. |
 | Python 3 | py3 | Only work if `python3` command is available. |
 
-#### Deploy on Vercel
+#### Remote Run
 
 Supported languages:
 
@@ -31,6 +36,7 @@ Supported languages:
 | Java | java ||
 | C++ | cpp ||
 | C | c ||
+| Rust | rust | |
 
 ## Dev
 

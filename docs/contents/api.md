@@ -54,7 +54,7 @@ Return type: `JSON`
 - Parameters:
   | key | value |
   | - | - |
-  | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c` |
+  | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c`, `rust` |
   | code | <your_code> |
 
 Return type: `JSON`
