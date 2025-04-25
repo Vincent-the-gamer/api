@@ -42,6 +42,28 @@ With prefix: `NITRO_`
 NITRO_BASE_URL=xxx
 ```
 
+### Puppeteer Config
+
+The `/directLink` API will use `Puppeteer` sometimes, so you need to configure your `path to Chrome` in `fast-dirpy.config.ts`
+
+```ts
+import { defineConfig } from 'fast-dirpy'
+
+export default defineConfig({
+  proxy: {
+    protocol: 'http',
+    host: '127.0.0.1',
+    port: 7890,
+  },
+  timeout: 20000,
+  // puppeteer configs
+  puppeteer: {
+    executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    headless: true
+  }
+})
+```
+
 ### Log
 
 This repo is using `tslog` as logger.

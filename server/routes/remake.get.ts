@@ -1,30 +1,30 @@
-import { randomPick } from "~~/tools/array"
-import { regions, locations, specialLocations, getSpecialIdentities } from "~~/tools/remake/remakeList"
-
+import { randomPick } from '~~/tools/array'
+import { getSpecialIdentities, locations, regions, specialLocations } from '~~/tools/remake/remakeList'
 
 export default eventHandler(() => {
   const region = randomPick(regions)
-  if(region) {
+  if (region) {
     let location: string
     let identity: string
-    if(Object.keys(specialLocations).includes(region)) {
+    if (Object.keys(specialLocations).includes(region)) {
       location = randomPick(
-        specialLocations[region]
+        specialLocations[region],
       )
-    } else {
-        location = randomPick(locations)
+    }
+    else {
+      location = randomPick(locations)
     }
 
     identity = randomPick(getSpecialIdentities(location))
 
     return {
-        code: 200,
-        message: `重开成功！你出生在${region}的${location}, 是${identity}！`,
+      code: 200,
+      message: `重开成功！你出生在${region}的${location}, 是${identity}！`,
     }
   }
 
   return {
     code: 500,
-    message: "重开失败！你没能出生！",
+    message: '重开失败！你没能出生！',
   }
 })

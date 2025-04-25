@@ -67,7 +67,6 @@ lastUpdated: true
 }
 ```
 
-
 ## YouTube/Bilibili直链解析
 
 > [!IMPORTANT]
@@ -78,9 +77,13 @@ lastUpdated: true
 - 请求体:
 
 ```json
+// "source": [
+//    "bilibili",
+//    "youtube",
+// ]
 {
-    "rawLink": "https://www.youtube.com/watch?v=SAXpBgkXt60",
-    "source": "youtube" // B站连接使用："bilibili"
+  "rawLink": "https://www.youtube.com/watch?v=SAXpBgkXt60",
+  "source": "youtube"
 }
 ```
 
@@ -88,8 +91,8 @@ lastUpdated: true
 
 ```json
 {
-    "code": 200,
-    "directLink": "<direct_link>"
+  "code": 200,
+  "directLink": "<direct_link>"
 }
 ```
 
@@ -106,8 +109,8 @@ lastUpdated: true
 
 ```json
 {
-    "code": 200,
-    "img": "https://vince-api.vercel.app/httpcat/404.jpg"
+  "code": 200,
+  "img": "https://vince-api.vercel.app/httpcat/404.jpg"
 }
 ```
 
@@ -123,8 +126,7 @@ lastUpdated: true
 
 ```json
 {
-    "code": 200,
-    "message": "重开成功！你出生在芬兰的市区, 是小南梁！"
+  "code": 200,
+  "message": "重开成功！你出生在芬兰的市区, 是小南梁！"
 }
 ```
-

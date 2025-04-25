@@ -14,18 +14,18 @@
     "lint:fix": "eslint . --fix",
     "dep": "taze major"
   },
+  "dependencies": {
+    "@snackbar/core": "^1.7.0"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^4.12.0",
-    "@shikijs/vitepress-twoslash": "^3.2.2",
-    "@types/node": "^22.14.1",
-    "eslint": "^9.24.0",
+    "@shikijs/vitepress-twoslash": "^3.3.0",
+    "@types/node": "^22.15.2",
+    "eslint": "^9.25.1",
     "eslint-plugin-format": "^1.0.1",
     "medium-zoom": "^1.1.0",
     "unocss": "66.1.0-beta.10",
-    "vite": "^6.2.6",
-    "vitepress": "^2.0.0-alpha.4"
-  },
-  "dependencies": {
-    "@snackbar/core": "^1.7.0"
+    "vite": "^6.3.3",
+    "vitepress": "^2.0.0-alpha.5"
   }
 }

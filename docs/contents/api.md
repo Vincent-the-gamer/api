@@ -77,9 +77,13 @@ Return type: `JSON`
 - Request Body:
 
 ```json
+// "source": [
+//    "bilibili",
+//    "youtube",
+// ]
 {
-    "rawLink": "https://www.youtube.com/watch?v=SAXpBgkXt60",
-    "source": "youtube" // "bilibili" for Bilibili.com
+  "rawLink": "https://www.youtube.com/watch?v=SAXpBgkXt60",
+  "source": "youtube"
 }
 ```
 
@@ -87,8 +91,8 @@ Return type: `JSON`
 
 ```json
 {
-    "code": 200,
-    "directLink": "<direct_link>"
+  "code": 200,
+  "directLink": "<direct_link>"
 }
 ```
 
@@ -105,8 +109,8 @@ Example: **https://vince-api.vercel.app/httpcat/404**
 
 ```json
 {
-    "code": 200,
-    "img": "https://vince-api.vercel.app/httpcat/404.jpg"
+  "code": 200,
+  "img": "https://vince-api.vercel.app/httpcat/404.jpg"
 }
 ```
 
@@ -125,7 +129,7 @@ Return Type: `JSON`
 
 ```json
 {
-    "code": 200,
-    "message": "重开成功！你出生在芬兰的市区, 是小南梁！"
+  "code": 200,
+  "message": "重开成功！你出生在芬兰的市区, 是小南梁！"
 }
 ```

@@ -50,7 +50,6 @@ async function copy(text: string) {
     })
 }
 
-
 </script>
 
 # Webfonts
