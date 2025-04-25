@@ -52,10 +52,11 @@ lastUpdated: true
 - URL: `https://vince-api.vercel.app/codeRunner`
 - Method: `GET`
 - 参数:
-  | 名称 | 值 |
-  | - | - |
-  | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c`, `rust` |
-  | code | <你的代码> |
+  | 参数名称 | 值 | 备注 |
+  | - | - | - |
+  | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c`, `rust` | |
+  | code | <你的代码> | |
+  | type | `remote`, null | 如果不是在`Vercel`部署, 你可以在 **dev** 或 **prod** 环境中手动指定`远程代码运行器`（默认会使用本地运行器）  |
 
 返回值类型：`JSON`
 

@@ -52,10 +52,11 @@ Return type: `JSON`
 - URL: `https://vince-api.vercel.app/codeRunner`
 - Method: `GET`
 - Parameters:
-  | key | value |
-  | - | - |
-  | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c`, `rust` |
-  | code | <your_code> |
+  | key | value | note |
+  | - | - | - |
+  | lang | `javascript`，`typescript`, `python`, `java`, `cpp`, `c`, `rust` | |
+  | code | <your_code> | |
+  | type | `remote`, null | If environment is not `Vercel`, you can choose `remote runner` in **dev** or **prod** env. (local runner by default.)  |
 
 Return type: `JSON`
 
