@@ -64,7 +64,7 @@ export default defineConfig({
   timeout: 20000,
   // puppeteer configs
   puppeteer: {
-    executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     headless: true
   }
 })

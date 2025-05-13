@@ -9,7 +9,7 @@ enum Language {
   CPP = 'cpp',
   C = 'c',
   Wenyan = 'wenyan',
-  Rust = 'rust'
+  Rust = 'rust',
 }
 
 // 对应语言和main文件名称映射
@@ -20,7 +20,7 @@ const langToMainMap = {
   [Language.Java]: 'main.java',
   [Language.CPP]: 'main.cpp',
   [Language.C]: 'main.c',
-  [Language.Rust]: 'main.rs'
+  [Language.Rust]: 'main.rs',
 }
 
 // 请求glot.io

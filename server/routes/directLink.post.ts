@@ -9,7 +9,7 @@ export default eventHandler(async (event) => {
   switch (source) {
     case 'youtube':
       directLink = await getDirpyLink({
-        url: rawLink
+        url: rawLink,
       })
       break
     case 'bilibili':
@@ -17,14 +17,15 @@ export default eventHandler(async (event) => {
       break
     case 'animeidhentai':
       // cannot use in vercel.
-      if(env !== "vercel") {
+      if (env !== 'vercel') {
         directLink = await getAnimeIdHentaiLink({
-          url: rawLink
+          url: rawLink,
         })
-      } else {
+      }
+      else {
         return {
           code: 500,
-          message: "Animehentai is not supported in vercel cloud function."
+          message: 'Animehentai is not supported in vercel cloud function.',
         }
       }
       break
