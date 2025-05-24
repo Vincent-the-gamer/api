@@ -2,6 +2,9 @@
 
 Self-hosted API.
 
+> [!CAUTION]
+> This project continues in [Vincent-the-gamer/mayu](https://github.com/Vincent-the-gamer/mayu), so it's been archived.
+
 ## Documentation
 
 https://api.vince-g.xyz/
